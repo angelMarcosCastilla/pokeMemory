@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>juego pokemon</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <h1 class="title">POKEMON MEMORY</h1>
+      
+        <div class="flex">
+            <div class="time">
+              time: <span id="time"></span>
+            </div>
+            <div class="attempt">
+                <p>Intento: <span id="attempt">3</span> </p>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <section class="container">
+      <div class="wrapper">
+        <div class="container-card" id="container-card"></div>
+      </div>
+    </section>
+    <template id="card-pokemon">
+      <div class="card__front">
+        <img src="./assets/imagen/pokebola.png" alt="carta de pokebola" />
+      </div>
+      <div class="card__back">
+        <img class="card__avatar" alt="picachu" />
+      </div>
+    </template>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

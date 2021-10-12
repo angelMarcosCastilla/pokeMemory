@@ -67,7 +67,7 @@ const comparePokemon = (pokemons) => {
     pokemons[0].cardPokemon.classList.add("card-pokeBola--found");
     pokemons[1].cardPokemon.classList.add("card-pokeBola--found");
     
-    if(pares==6)  alertMessage("Felecidades acabas de ganar el juego", gano=true)
+    if(pares==6)  alertMessage("Felicidades acabas de ganar el juego", gano=true)
   }else{
     attempt--;
     $attempt.textContent=`${attempt}`
@@ -86,7 +86,7 @@ const comparePokemon = (pokemons) => {
         capture:false,
         once:true
       });
-      if(attempt==0) alertMessage("lo siestimos mucho acaba de perder el juego",gano);
+      if(attempt==0) alertMessage("lo sentimos mucho acaba de perder el juego",gano);
     },500);
     
   } 
